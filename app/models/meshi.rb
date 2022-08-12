@@ -1,0 +1,2 @@
+class Meshi < ApplicationRecord
+end
