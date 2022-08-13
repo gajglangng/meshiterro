@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #get 'post_images/new'
   #get 'post_images/index'
   #get 'post_images/show'の3つを書き換え
-  resources :post_images, only: [:new, :index, :show]
+  resources :post_images, only: [:new, :create, :index, :show]
   
   get "/homes/about" => "homes#about", as: "about"
 end
