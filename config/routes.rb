@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   #get 'post_images/index'
   #get 'post_images/show'の3つを書き換え
   resources :post_images, only: [:new, :create, :index, :show, :destroy] do
-    resources :post_comments, only: [:create]
+    resources :post_comments, only: [:create, :destroy]
   end 
   
   resources :users, only: [:show, :edit, :update]
